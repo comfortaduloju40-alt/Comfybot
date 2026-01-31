@@ -6,5 +6,7 @@ services:
     startCommand: python bot.py
     envVars:
       - key: BOT_TOKEN
-        sync: false
-    instanceType: free  # Start free, upgrade for 24/7 uptime[citation:2]
+        value: 8082401142:AAEVhFQe_EN2cEu-ISbJQvvfV3qf5AMb_P0"  # Paste YOUR token here
+      - key: PORT
+        value: 10000
+    plan: free
