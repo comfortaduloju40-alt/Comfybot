@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: telegram-trading-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+    instanceType: free  # Start free, upgrade for 24/7 uptime[citation:2]
